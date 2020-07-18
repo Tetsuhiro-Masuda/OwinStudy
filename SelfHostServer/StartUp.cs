@@ -1,14 +1,27 @@
 ﻿using System;
 using System.IO;
+using Microsoft.Owin.FileSystems;
+using Microsoft.Owin.StaticFiles;
 using Owin;
 
 namespace SelfHostServer
 {
     internal class StartUp
     {
+        public StartUp()
+        {
+            //need reflection
+        }
+
         //use https://docs.microsoft.com/ja-jp/aspnet/aspnet/overview/owin-and-katana/owin-startup-class-detection
         public void Configuration(IAppBuilder app)
         {
+            var fileServerOption = new FileServerOptions
+            {
+                FileSystem = new PhysicalFileSystem(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "webroot"))
+            };
+            app.UseFileServer(fileServerOption);
+
             app.Use((context, next) =>
             {
                 var output = context.Get<TextWriter>("host.TraceOutput");

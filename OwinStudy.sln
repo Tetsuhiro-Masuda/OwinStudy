@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "Project\Project.csproj", "{3D2A52E1-AB2E-4275-A525-4E76A29A189A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHostServer", "SelfHostServer\SelfHostServer.csproj", "{1F39EBFB-8EFD-4664-80E2-9D8EC5AEF5E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +9,9 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3D2A52E1-AB2E-4275-A525-4E76A29A189A}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{3D2A52E1-AB2E-4275-A525-4E76A29A189A}.Debug|anycpu.Build.0 = Debug|anycpu
-		{3D2A52E1-AB2E-4275-A525-4E76A29A189A}.Release|anycpu.ActiveCfg = Release|anycpu
-		{3D2A52E1-AB2E-4275-A525-4E76A29A189A}.Release|anycpu.Build.0 = Release|anycpu
+		{1F39EBFB-8EFD-4664-80E2-9D8EC5AEF5E3}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{1F39EBFB-8EFD-4664-80E2-9D8EC5AEF5E3}.Debug|anycpu.Build.0 = Debug|anycpu
+		{1F39EBFB-8EFD-4664-80E2-9D8EC5AEF5E3}.Release|anycpu.ActiveCfg = Release|anycpu
+		{1F39EBFB-8EFD-4664-80E2-9D8EC5AEF5E3}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

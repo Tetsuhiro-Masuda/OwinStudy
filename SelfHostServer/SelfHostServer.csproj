@@ -56,10 +56,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="webroot\Contents1\testPicture1.png">
+    <None Include="webroot\Contents1\testPicture.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="webroot\Contents1\Contents2\testPicture2.png">
+    <None Include="webroot\Contents1\Contents2\testPicture.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="webroot\Contents1\Contents2\testPicture3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

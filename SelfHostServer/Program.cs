@@ -6,11 +6,11 @@ namespace SelfHostServer
 {
     public class MainClass
     {
-        public static void Main()
+        public static async Task Main()
         {
             using (WebApp.Start<StartUp>("http://localhost:9000"))
             {
-                new TaskFactory().StartNew(InputQuit).Wait();
+                await Task.Factory.StartNew(InputQuit).ConfigureAwait(false);
             }
         }
 
@@ -25,3 +25,4 @@ namespace SelfHostServer
 
     }
 }
+

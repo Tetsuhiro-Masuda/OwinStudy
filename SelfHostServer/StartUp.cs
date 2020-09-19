@@ -53,17 +53,17 @@ namespace SelfHostServer
                 return next().ContinueWith(result =>
                 {
                     output.WriteLine("Scheme {0} : Method {1} : Path {2} : MS {3}",
-                    context.Request.Scheme, context.Request.Method, context.Request.Path, getTime());
+                    context.Request.Scheme, context.Request.Method, context.Request.Path, GetTime());
                 });
             });
 
             app.Run(async context =>
             {
-                await context.Response.WriteAsync(getTime() + " My First OWIN App");
+                await context.Response.WriteAsync(GetTime() + " My First OWIN App");
             });
         }
 
-        string getTime()
+        string GetTime()
         {
             return DateTime.Now.Millisecond.ToString();
         }
